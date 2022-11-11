@@ -113,7 +113,7 @@ class hw5:
     x_axis = []
 
     index = 0
-    for x in range(0,101):
+    for x in range(0, 101):
         x_axis.append(index)
         index = index+1
 
@@ -145,8 +145,6 @@ class hw5:
             bag = bag4.copy()
         elif graph == 4:
             bag = bag5.copy()
-
-        #print(str(len(bag)))
 
         #for each candy
         for x in range(-1, 100):
@@ -510,7 +508,7 @@ class hw5:
     width = 1
     plt.bar(x_vals1, y_vals1, width=width, align='edge')
     plt.xlabel('y')
-    plt.ylabel('likelihood')
+    plt.ylabel('Likelihood')
     plt.axis([0,5,0,1])
 
 
@@ -542,32 +540,24 @@ class hw5:
             x_axis.append(theta)
             theta = theta + 0.1
 
-        # print("graph # "+str(k+1))
-        # print("n flips: "+str(n))
-        # print("y heads: "+str(y))
-        # print("theta values")
-        # print(x_axis)
-        # print("posterior distribution values")
-        # print(y_axis)
-
         y_axis1 = np.array(y_axis)
         x_axis1 = np.array(x_axis)
 
         if k == 0:
             axs[0,0].plot(x_axis,y_axis)
-            axs[0,0].set_title('1 flip, 1 heads')
+            axs[0,0].set_title('1 Flip, 1 Heads')
         elif k == 1:
             axs[0,1].plot(x_axis,y_axis)
-            axs[0,1].set_title('2 flips, 2 heads')
+            axs[0,1].set_title('2 Flips, 2 Heads')
         elif k == 2:
             axs[1,0].plot(x_axis,y_axis)
-            axs[1,0].set_title('3 flips, 2 heads')
+            axs[1,0].set_title('3 Flips, 2 Heads')
         elif k == 3:
             axs[1,1].plot(x_axis,y_axis)
-            axs[1,1].set_title('4 flips, 3 heads')
+            axs[1,1].set_title('4 Flips, 3 Heads')
 
         for ax in axs.flat:
-            ax.set(xlabel = 'theta', ylabel = 'posterior distribution of theta')
+            ax.set(xlabel = 'Theta', ylabel = 'Posterior Distribution of Theta')
         #for ax in axs.flat:
             #ax.label_outer()
 
