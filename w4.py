@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import matplotlib.lines as mlines
 from math import pow
 
-class hw5:
+class hw4:
 
  
     bag = []
@@ -558,8 +558,6 @@ class hw5:
 
         for ax in axs.flat:
             ax.set(xlabel = 'Theta', ylabel = 'Posterior Distribution of Theta')
-        #for ax in axs.flat:
-            #ax.label_outer()
 
     plt.show()
 
